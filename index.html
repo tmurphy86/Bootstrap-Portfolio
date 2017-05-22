@@ -1,105 +1,113 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-us">
+
 <head>
-  <title>Bootstrap Example</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <style>
-    /* Remove the navbar's default margin-bottom and rounded borders */ 
-    .navbar {
-      margin-bottom: 0;
-      border-radius: 0;
-    }
-    
-    /* Add a gray background color and some padding to the footer */
-    footer {
-      background-color: #f2f2f2;
-      padding: 25px;
-    }
-  </style>
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<script src="https://use.fontawesome.com/e0db2754f6.js"></script>
+
+	<!--Comments for this text-->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+	<title>Tim Murphy</title>
+	
+	<!-- Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="assets/css/font-awesome.css">
+
+	<!-- Bootstrap CSS styling links -->
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+	<!-- Internal CSS styling links -->
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
 </head>
+
+
+
 <body>
+<div class="view">
+    <!--Intro content-->
+	<!-- The header bar for all pages requires editing since it isn't centralized -->
+	<div class="navbar navbar-default">
+		<div class="container">
+			<div class="navbar-header">
+				<a class="navbar-brand">{Timothy "TJ" Murphy}</a>
+			</div>
+				<ul class="nav navbar-nav navbar-right">
+					<li><a class="hilinks hilink" href="index.html">{About}</a></li>
+			
+					<li><a class="hilinks hilink" href="portfolio.html">{Portfolio}</a></li>
 
-<nav class="navbar navbar-inverse">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
-      </button>
-      <a class="navbar-brand" href="#">Portfolio</a>
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Gallery</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
+					<li><a class="hilinks hilink" href="contact.html">{Contact}</a></li>
 
-<div class="jumbotron">
-  <div class="container text-center">
-    <h1>My Portfolio</h1>      
-    <p>Some text that represents "Me"...</p>
-  </div>
+				</ul>
+		</div>
+	</div>
+
+
+
+	<!-- This wrapper contains the differences of the middle content which varies on each html page -->
+<div class="container">
+    <div class="row">
+      <div class="col-md-8">
+       	<div class="panel panel-default">
+          <div class="panel-heading">
+            <h1 class="panel-title"><strong>About Me</strong></h1>
+          </div>
+        <div class="panel-body row">
+          <div class="col-md-3">
+            <div class="thumbnail">
+				<a href="https://www.linkedin.com/in/techmurphy/"><img class="img-responsive" src="assets/images/profilepic.jpg" alt="me"></a>
+   			 </div>
+            </div>
+      <div class="col-md-9">
+				<p>
+				A multifaceted technical leader with a strong business aptitude who manages nimble teams of diverse technical assets over an array of projects while emphasizing high-quality customer service. A professional with well rounded, cross-functional technical skill sets to include, private and public cloud implementations, network, systems, storage, and security frameworks. Strong background as a turn-around specialist managing high volume, high risk, complex projects to meet strict deadlines.
+				</p>
+           </div>
+        </div>
+       </div>
+      </div>
+
+		<!-- Right side social media connection page - static on all of the html pages -->
+<div class="sidebar col-md-4">
+   <div class="panel panel-default">
+     <div class="panel-heading">
+            <h3 class="panel-title"><strong>Connect with Me</strong></h3>
+          </div>
+          <div class="panel-body">
+          	<div class="btn-group btn-group-justified" role="group" aria-label="...">
+				<a href="https://www.linkedin.com/in/techmurphy/" type="button" class="btn btn-default"><img class="img-responsive" src="assets/images/linkedinlogo-128px.png" alt="linkedinlogo-128px">
+				</a>
+
+				<a href="https://github.com/tmurphy86" type="button" class="btn btn-default">
+				<img class="img-responsive" src="assets/images/githublogo.png" alt="git">
+				</a>
+
+				<a href="https://stackexchange.com/users/10695645/tim-murphy" type="button" class="btn btn-default">
+				<img class="img-responsive" src="assets/images/stackoverflowlogo.png" alt="stackoverflowlogo">
+				</a>
+
+			</div>
+           </div>
+          </div>
+        </div>
 </div>
-  
-<div class="container-fluid bg-3 text-center">    
-  <h3>Some of my Work</h3><br>
-  <div class="row">
-    <div class="col-sm-3">
-      <p>Some text..</p>
-      <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
-    </div>
-    <div class="col-sm-3"> 
-      <p>Some text..</p>
-      <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
-    </div>
-    <div class="col-sm-3"> 
-      <p>Some text..</p>
-      <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
-    </div>
-    <div class="col-sm-3">
-      <p>Some text..</p>
-      <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
-    </div>
-  </div>
-</div><br>
+</div>
+</div>
 
-<div class="container-fluid bg-3 text-center">    
-  <div class="row">
-    <div class="col-sm-3">
-      <p>Some text..</p>
-      <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
-    </div>
-    <div class="col-sm-3"> 
-      <p>Some text..</p>
-      <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
-    </div>
-    <div class="col-sm-3"> 
-      <p>Some text..</p>
-      <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
-    </div>
-    <div class="col-sm-3">
-      <p>Some text..</p>
-      <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
-    </div>
-  </div>
-</div><br><br>
 
-<footer class="container-fluid text-center">
-  <p>Footer Text</p>
+	<!-- sticky footer which stays at the bottom as the page moves -->
+<footer class="footer">
+ 	 <div class="container">
+ 	   <p class="container-fluid text-light">© Copyright 2017 Timothy Murphy</p>
+	  </div>
 </footer>
 
 </body>
+	
+
+
 </html>

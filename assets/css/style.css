@@ -1,7 +1,20 @@
-html {
-	background-image: url("../images/nasty_fabric.png");
+.navbar-brand {
+	color:white;
+/*	background: #4aaaa5;*/
+	font-size: 24px;
+	font-weight: 400;
 }
 
+html,
+body,
+.view {
+    height: 100%;
+}
+
+.view {
+    background: url("../images/nasty_fabric.png");
+ }
+/*
 body {
 	margin: 0;
 }
@@ -146,8 +159,8 @@ div.wrapper{
 	padding: 1em;
 	text-align: left;
 }
-
-.foot{
+*/
+.footer{
 	color: #dddddd;
 	background-color: #666666;
 	text-align: center;
@@ -159,7 +172,7 @@ div.wrapper{
   	z-index: 5;
 }
 
-#teal{
+/*#teal{
 	background-color: #4aaaa5;
 	position: absolute;
 	top: -5px;
@@ -201,11 +214,11 @@ div.wrapper{
 }
 
 /* Clears the float*/
-.clearfix::after {
+/*.clearfix::after {
 	content: "";
 	display: block;
 	clear: both;
-}
+}*/*/
 @media screen and (max-width: 980px) {
 
 	#name{
